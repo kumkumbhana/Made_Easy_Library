@@ -1,0 +1,48 @@
+body{
+
+     background-image: url('../images/bulbbook.jpg');
+     background-repeat: no-repeat;
+     background-size: 100%;
+}
+
+.img-thumbnail {
+    padding: 1.50rem;
+    background-color: #fff;
+    border: 10px solid #055160;
+    border-radius: 21.25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+p{
+     color: white;
+     font-size: large;
+
+}
+
+#gp{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
