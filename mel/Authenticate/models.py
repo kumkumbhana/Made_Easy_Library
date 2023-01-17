@@ -8,3 +8,4 @@ class Contact(models.Model):
     description=models.TextField()
     def __str__(self) :
         return f'Message from {self.name}'
+

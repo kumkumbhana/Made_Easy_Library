@@ -1,5 +1,66 @@
-{% extends 'base.html' %}
-{% block title %}About{% endblock title %}
-{%block body %}
-<h1> This pages shows about us</h1>
-{%endblock body%}
+
+{% block title %}{% endblock title %}
+{% load static %}
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us Section</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href=
+     "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="{% static 'Authenticate/css/style2.css' %}">
+</head>
+<body>
+	<div class="about">
+	<div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1>About Us</h1>
+				</div>
+				<div class="content">
+					<h3>Made Easy Library</h3>
+					<p>Made Easy Library is a high quality resource for free PDF books, which are digitized version of books attained the
+						 public domain status. This is the era of digitalisation and people don't have time to go to library and read books there.
+						  So Our aim is to provide the free book pdf and transform the most popular works
+						of legendary authors to modern reading room. Our library is so much user friendly so that readers can easy interact with it.</p>
+					<div class="button">
+						<a href="">Read More</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="image-section">
+				<img src="{% static 'Authenticate/images/Library.jpg'%}">
+			</div>
+		</div>
+	</div>
+	<div class="creator">
+		<h2>Meet Creators</h2>
+	<div class="section1">
+
+		<div class="img1">
+			<img  src="{% static 'Authenticate/images/kumkum.jpg' %}" height="200" width="200" class="rounded-circle" alt="GFG" >
+			<h3>Kumkum Bhana</h3>
+		</div>
+		<div class="img1">
+			<img  src="{% static 'Authenticate/images/harshit.jpg' %}" height="200" width="200" class="rounded-circle" alt="GFG">
+			<h3> Harshit <Br> Gupta</h3>
+		</div>
+		<div class="img1">
+			<img   src="{% static 'Authenticate/images/harshal.jpg' %}" height="200" width="200" class="rounded-circle" alt="GFG">
+			<h3>Harshal Prachand</h3>
+		</div>
+	</div>
+    </div>
+</div>
+
+</body>
+</html>
+
+{% endblock body %}

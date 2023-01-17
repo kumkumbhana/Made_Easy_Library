@@ -1,0 +1,215 @@
+{% extends 'base.html' %}
+{% block title %}{% endblock title %}
+{% load static %}
+{% block body %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!--flickity carousel link-->
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+ #footer{
+    display: flex;
+    background-color:#333;
+
+}
+#footer a{
+    float:left;
+    display:block;
+    color: white;
+    text-align:center;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+#footer .flex-align-right{
+    margin-left: auto;
+}
+#footer a:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+  padding: 1px;
+}
+.btn2{
+  border-radius: 2px;
+  border: 2px solid black;
+  padding: 4px;
+  margin: 4px;
+}
+
+    </style>
+        <title>UserInterface</title>
+  </head>
+  <body>
+
+
+
+
+      </nav>
+      <!--carousel-->
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade   " data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'Authenticate/images/image1 for carousel.webp' %}" width="100" height="500"  class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Welcome to Made Easy Library</h2>
+              <p> </p>
+              <button class="btn btn-danger"></button>
+              <button class="btn btn-primary"></button>
+              <button class="btn btn-success"> </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'Authenticate/images/img7.jpeg' %}" width="100" height="500"  class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Welcome to Made Easy Library</h2>
+              <p></p>
+              <button class="btn btn-danger"></button>
+              <button class="btn btn-primary"></button>
+              <button class="btn btn-success"> </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'Authenticate/images/bookbg.jpg' %}" width="100" height="500" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Welcome to Made Easy Library</h2>
+              <p></p>
+              <button class="btn btn-danger"></button>
+              <button class="btn btn-primary"></button>
+              <button class="btn btn-success"> </button>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!--table-->
+
+      <div class="container">
+      <a class="btn btn-success m-3" href="/addbook"  role="button">Add book</a>
+      <table class="table table-dark">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>book</th>
+              <th>book Name</th>
+              <th>Publisher</th>
+              <th>Author</th>
+              <th>Read &<br> Download</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td>1</td>
+            <td><img src="{% static 'Authenticate/images/Data Structure.jpg' %}" width="90px" height="90px"></td>
+            <td>Data Structure</td>
+            <td>Schaum's outline</td>
+            <td>Seymour Lipschutz</td>
+            <td><a class="btn btn-primary " href="https://drive.google.com/file/d/1-9uzuvUneXL03QMmvlZPz1mUyIirxf6U/view?usp=sharing"  role="button">Read &<br> Download</a></td>
+
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><img src="{% static 'Authenticate/images/E Balagurusamy oops c++.jpg' %}" width="90px" height="90px"></td>
+              <td>Object oriented programming C++</td>
+              <td>McGraw-Hills</td>
+              <td>E Balagurusamy</td>
+              <td><a class="btn btn-primary " href="https://drive.google.com/file/d/12eLth2l3B_sV4zsWln3mbtKlHWeCMb_Z/view?usp=sharing"  role="button">Read &<br> Download</a></td>
+
+
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><img src="{% static 'Authenticate/images/Alchemist fiction book.jpg' %}" width="90px" height="90px"></td>
+                <td>The Alchemist</td>
+                <td>Paulo Coelho</td>
+                <td>Paulo Coelho</td>
+                <td><a class="btn btn-primary " href="https://drive.google.com/file/d/1-rmJWziBI-RUFs1zddu35QRyQzJIv-KL/view?usp=sharing"  role="button">Read &<br> Download</a></td>
+
+
+              </tr>
+                <tr>
+                  <td>4</td>
+                  <td><img src="{% static 'Authenticate/images/nonfic.jpg' %}" width="90px" height="90px"></td>
+                  <td>Writing Creative Nonfiction</td>
+                  <td>The Great Courses</td>
+                  <td>Tilar J. Mazzeo</td>
+                  <td><a class="btn btn-primary " href="https://drive.google.com/file/d/10F0pjRe1afjE-NPF-4mlN0Y2mSW81sr_/view?usp=sharing"  role="button">Read &<br> Download</a></td>
+
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><img src="{% static 'Authenticate/images/panch.jpg' %}" width="90px" height="90px"></td>
+                    <td>101 Panchatantra Stories</td>
+                    <td>Dreamland Publications</td>
+                    <td>Dreamland Publications</td>
+                    <td><a class="btn btn-primary " href="https://drive.google.com/file/d/13xY2YhoDFgqZqeTFw-w3aMWkIS4Ppih6/view?usp=sharing"  role="button">Read &<br> Download</a></td>
+
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td><img src="{% static 'Authenticate/images/nove.jpg' %}" width="90px" height="90px"></td>
+                      <td>The Monk Who Sold His Ferrari</td>
+                      <td>HarperSanFransico</td>
+                      <td>Robin S. Sharma</td>
+                      <td><a class="btn btn-primary " href="https://drive.google.com/file/d/122emGKBN3IqDzBn_t8fXPaNNWOZu2_OI/view?usp=sharing"  role="button">Read &<br> Download</a></td>
+
+                      </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="button">
+     <a href=""> <button type="button" class="btn2 btn-secondary">
+        <i class="fa-regular fa-arrow-left m-1" style="font-size: 20px; color: black;"></i>previous</button></a>
+        <a href=""><button type="button" class="btn2 btn-secondary">Next<i class="fa-regular fa-arrow-right m-1" style="font-size: 20px;"></i></button></a>
+</div>
+      <!--footer-->
+      <footer id="footer">
+        <a href="/contact">contact us</a>
+          <a href="https://t.me/madeEasyLibrary"><i  class="fa fa-telegram m-1" style="font-size:36px; color:rgb(0, 132, 255) ;"></i></a>
+         <a href="mailto:madeeasy63@gmail.com"> <i class="fa fa-envelope m-1" style="font-size:36px; color:red;"></i></a>
+
+        <a class="flex-align-right" href="#">2022 | All Copyrights &copy; are reserved by Made Easy Library </a>
+      </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+{% endblock body %}

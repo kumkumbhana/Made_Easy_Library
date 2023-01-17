@@ -1,0 +1,64 @@
+
+{% load static %}
+{% block body %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+    <link rel="stylesheet" href="{% static 'Authenticate/css/style3.css' %}">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="form">
+                <h2>Send Feedback</h2>
+                <div class="user">
+                    <input type="text" placeholder="Enter your Name">
+                </div>
+                <div class="username">
+                    <input type="email" placeholder="Enter your Email">
+                </div>
+                <textarea placeholder="Enter your message"></textarea>
+                <div class="rating">
+                    <input type="radio" name="emoji" id="emoji1" checked>
+                    <label for="emoji1 ">
+                        <img src="{% static 'Authenticate/images/satisfaction.png'%}" title="satisfactory">
+                        <h4>Satisfactory</h4>
+                    </label>
+                    <input type="radio" name="emoji" id="emoji2">
+                    <label for="emoji2 ">
+                        <img src="{% static 'Authenticate/images/happy.png'%}" title="happy">
+                        <h4>Happy</h4>
+                    </label>
+                    <input type="radio" name="emoji" id="emoji3" checked >
+                    <label for="emoji3 ">
+                        <img src="{% static 'Authenticate/images/good.png'%}" title="good">
+                        <h4>Good</h4>
+                    </label>
+                    <input type="radio" name="emoji4" id="emoji4">
+                    <label for="emoji4 ">
+                        <img src="{% static 'Authenticate/images/notGood.png'%}" title="not good">
+                        <h4>Not Good</h4>
+                    </label>
+                    <input type="radio" name="emoji5" id="emoji5">
+                    <label for="emoji5 ">
+                        <img src="{% static 'Authenticate/images/excellent.png'%}" title="excellent">
+                        <h4>Excellent</h4>
+                    </label>
+                </div>
+                <div class="sub">
+                    <input type="submit" value="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+{% endblock body %}
